@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Email Template</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/css/mdb.min.css" rel="stylesheet">
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a {
+            margin: 0 auto;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wraping-template">
+    <table width="500px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td bgcolor="#333333" align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 500px;"
+                    class="wrapper">
+                    <tr>
+                        <td align="center" height="100%" valign="top" width="100%" colspan="2">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                                style="max-width:500;">
+                                <tr>
+                                    <td align="center" valign="top" style="font-size:0;">
+                                        <div
+                                            style="display:inline-block;background-color: #40DA81;
+                                            padding: 15px 6px; margin: 0 -2px; max-width:153px; vertical-align:top; width:100%;">
+
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="115">
+                                                <tr>
+                                                    <td
+                                                        style="font-size: 28px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #fff;">
+                                                        <span th:text="${name}">September</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        style="font-size: 28px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #fff;">
+                                                        <span th:text="${date}">1</span></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div
+                                            style="display:inline-block; margin: 0 -2px; max-width:351px; vertical-align:top; width:100%;">
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+
+                                                    <td style="padding: 40px 0 0 0;" class="no-padding">
+                                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                            <tr>
+                                                                <td align="left"
+                                                                    style="padding: 0 0 5px 25px; font-size: 20px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #fff;"
+                                                                    class="padding-meta"><span th:text="${meetingname}"></span>Meeting Name
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td bgcolor="#E6E9ED" align="center" style="padding: 15px 15px 16px 15px;" class="section-padding">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                    style="padding-bottom: 20px; max-width: 500px;" class="responsive-table">
+                    <tr>
+                        <td align="center" height="100%" valign="top" width="100%" colspan="2">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:500;">
+                                <tr>
+                                    <td align="center" valign="top" style="font-size:0;">
+                                        <div
+                                            style="display:inline-block; margin: 0 -2px; max-width:40px; vertical-align:top; width:100%;">
+
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="115">
+                                                <tr>
+                                                    <td valign="top" style="padding: 20px 0 0 0;" class="mobile-hide"><a
+                                                            target="_blank"><img src="./clock.png"
+                                                                alt="alt text here" width="25" height="25" border="0"
+                                                                style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 25px; height: 25px;"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                        <div
+                                            style="display:inline-block; margin: 0 -2px; max-width:385px; vertical-align:top; width:100%;">
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td style="padding: 20px 0 0 0;" class="no-padding">
+                                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                            <tr>
+                                                                <td align="left"
+                                                                    style="padding: 0 0 5px 25px; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #222;"
+                                                                    class="padding-meta"><span th:text="${week}">Friday</span>, <span th:text="${date}">1</span> <span th:text="${date}">September</span> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left"
+                                                                    style="padding: 0 0 5px 25px; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #333333;"
+                                                                    class="padding"><span th:text="${time}">17:30</span> - <span th:text="${time}">18:30 [UTC]</span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                
+
+                                            </table>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                        <tr>
+                            <td align="center" height="100%" valign="top" width="100%" colspan="2">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                                    style="max-width:500;">
+                                    <tr>
+                                        <td align="center" valign="top" style="font-size:0;">
+                                            <div
+                                                style="display:inline-block; margin: 0 -2px; max-width:40px; vertical-align:top; width:100%;">
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                    width="115">
+                                                    <tr>
+                                                        <td valign="top" style="padding: 30px 0 0 0;"
+                                                            class="mobile-hide"><a target="_blank"><img
+                                                                    src="./pin.png" alt="alt text here"
+                                                                    width="25" height="25" border="0"
+                                                                    style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 25px; height: 25px;"></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div
+                                                style="display:inline-block; margin: 0 -2px; max-width:385px; vertical-align:top; width:100%;">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                    width="100%">
+                                                    <tr>
+                                                        <td style="padding: 30px 0 0 0;" class="no-padding">
+                                                            <table border="0" cellspacing="0" cellpadding="0"
+                                                                width="100%">
+                                                                <tr>
+                                                                    <td align="left"
+                                                                        style="padding: 0 0 5px 25px; font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #222;"
+                                                                        class="padding-meta"><span th:text="${location}">Newyork</span></td>
+                                                                </tr>
+                                                               
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    
+
+                                                </table>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" height="100%" valign="top" width="100%" colspan="2">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                                    style="max-width:500;">
+                                    <tr>
+                                        <td align="center" valign="top" style="font-size:0;">
+                                            <div
+                                                style="display:inline-block; margin: 0 -2px; max-width:40px; vertical-align:top; width:100%;">
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                    width="115">
+                                                    <tr>
+                                                        <td valign="top" style="padding: 30px 0 0 0;"
+                                                            class="mobile-hide"><a target="_blank"><img
+                                                                    src="./description.png" alt="alt text here"
+                                                                    width="25" height="25" border="0"
+                                                                    style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 25px; height: 25px;"></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                            <div style="display:inline-block; margin: 0 -2px; max-width:385px; vertical-align:top; width:100%;">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                    width="100%">
+                                                    <tr>
+                                                        <td style="padding: 30px 0 0 0;" class="no-padding">
+                                                            <table border="0" cellspacing="0" cellpadding="0"
+                                                                width="100%">
+                                                                <tr>
+                                                                    <td align="left"
+                                                                        style="padding: 0 0 5px 25px; width:80px;font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #222;"
+                                                                        class="padding-meta">Description</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="left"
+                                                                        style="padding: 0 0 5px 25px; width:80px;font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #aaaaaa;"
+                                                                        class="padding-meta"><span th:text="${name}">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nesciunt dignissimos, possimus ipsam nobis quis repudiandae expedita, libero dolorem at pariatur. </span></td>
+                                                                </tr>
+                                                               
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td align="center" height="100%" valign="top" width="100%" colspan="2">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                                    style="max-width:500;">
+                                    <tr>
+                                        <td align="center" valign="top" style="font-size:0;">
+                                            <div style="display:inline-block; margin: 0 -2px; max-width:308px; vertical-align:top; width:100%;">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                    width="100%">
+                                                    <tr>
+                                                        <td style="padding: 30px 0 0 0;" class="no-padding">
+                                                            <table border="0" cellspacing="0" cellpadding="0"
+                                                                width="100%">
+                                                                
+                                                                <tr>
+                                                                    <td align="left"
+                                                                        style="color: #343434; font-family: Quicksand, Calibri, sans-serif; font-weight:400;letter-spacing: 1px; line-height: 200%"
+                                                                        class="main-header">
+                                                                        <div style="line-height: 200%">
+                                                                            <p>Thanks, <br> From example.com</p>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                               
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                </table>
+</div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/js/mdb.min.js"></script>
+</body>
+</html>
